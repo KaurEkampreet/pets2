@@ -2,8 +2,10 @@
 
 
 /*Ekampreet Kaur
-* date: Jan/15/2020
-* URL: http://ekaur.greenriverdev.com/328/chicken/index.php
+* Elijah Maret
+* date: Jan/24/2020
+* URL: http://ekaur.greenriverdev.com/328/pets2/index.php
+ * URL: http://emaret.greenriverdev.com/328/pets2/index.php
 * description:
 */
 
@@ -31,6 +33,16 @@ $f3->route('GET /', function () {
     echo "<a href='order'>Order a Pet</a>";
 });
 
+$f3->route('GET /@item', function($f3, $params) {
+    //var_dump($params);
+    $item = $params['item'];
+    $petSounds = array("dog" => "Woof", "chicken" => "Cluck cluck", "cat" => "Meow", "fish" => "...", "crow" => "Cawcaw!");
+    if (array_key_exists($item, $petSounds)) {
+        echo $petSounds[$item];
+    } else {
+        $f3->error(404);
+    }
+});
 
 
 
