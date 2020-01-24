@@ -1,0 +1,17 @@
+{
+  "name": "328/Hello",
+  "authors": [
+    {
+      "name": "Ekampreet Kaur",
+      "email": "ekaur@mail.greenriver.edu"
+    },
+    {
+      "name": "Elijah Maret",
+      "email": "emaret2@mail.greenriver.edu"
+    }
+
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
